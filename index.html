@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name=viewport" content="width=device-width, initial-scale=1.0">
+	<title>Diane Yang, Product Designer</title>
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133452351-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-133452351-1');
+	</script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="top">
+
+			<div class="about-wrap width-1120">
+				<div class="about">
+					<div class="about-details">
+						<h1>Hi! I’m Diane Yang, a product designer with 7+ years of experience based in the Bay Area.<br><br>
+							I specialize in crafting design systems, aligning designs with business goals, and building through fast iteration cycles.</h1><br><br><br>
+
+							<h3>Currently at <a href="https://tiplink.io/" target="_blank" style="color: #222;">TipLink</a>, designing frictionless experiences to onramp anyone into the world of web3.<br>
+						Reach out to me at: <a href="mailto:hello@dianeyang.design" style="color: #222;">hello@dianeyang.design</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content width-1120">
+		</div>
+
+		<div class="footer">
+			<a class="footer-email" href="mailto:hello@dianeyang.design">hello@dianeyang.design</a>
+			<span class="footer-title">Design + Coded by Diane Yang</span>
+			<ul class="footer-social">
+				<li><a href="https://dribbble.com/diane_yang" target="_blank"><img src="assets/dribbble.svg"></a></li>
+				<li><a href="https://www.linkedin.com/in/yangdiane" target="_blank"><img src="assets/linkedin.svg"></a></li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(document).ready(function() {
+	    $("body").css("display", "none");
+
+	    $("body").fadeIn(1000);
+
+	    $("a.transition").click(function(event){
+	        event.preventDefault();
+	        linkLocation = this.href;
+	        $("body").fadeOut(1000, redirectPage);
+	    });
+
+	    function redirectPage() {
+	        window.location = linkLocation;
+	    }
+	});
+	</script>
+</body>
+</html>
