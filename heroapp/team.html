@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Hero.app Team</title>
+
+    	<link rel="stylesheet" href="normalize.css" />
+    	<link rel="stylesheet" href="main.css" />
+
+    	<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+	    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+	    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script type="text/javascript">
+		$(document).ready(function() {
+
+		    if ($('.smart-scroll').length > 0) {
+		         var last_scroll_top = 0;
+		        $(window).on('scroll', function() {
+		            scroll_top = $(this).scrollTop();
+		            if(scroll_top < last_scroll_top) {
+		                $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+		            }
+		            else {
+		                $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+		            }
+		            last_scroll_top = scroll_top;
+		        });
+		    }
+			$(window).scroll(function(){
+			    if ($(this).scrollTop() > 50) {
+			       $('nav').addClass('nav-shadow');
+			    } else {
+			       $('nav').removeClass('nav-shadow');
+			    }
+			});
+
+			
+		});
+		</script>
+		<script>
+		function myFunction() {
+		  document.getElementById("mobilenav").classList.toggle("show");
+		}
+
+		window.onclick = function(event) {
+		  if (!event.target.matches('.navbtn')) {
+		    var dropdowns = document.getElementsByClassName("mobile-nav-wrapper");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+		</script>
+
+	</head>
+
+	<body>
+
+		<nav class="smart-scroll">
+			<a class="logo" href="index.html"></a>
+			<ul>
+				<li><a class="button ghost" href="features.html">Features</a></li>
+				<li><a class="button ghost use-cases" href="#">Use Cases <span class="caret"></span></a>
+					<ul>
+						<li><a class="button ghost" href="account-executives-usecase.html">Account Executives</a></li>
+						<li><a class="button ghost" href="bdrs-sdrs-usecase.html">BDRs / SDRs</a></li>
+						<li><a class="button ghost" href="customer-success-usecase.html">Customer Success</a></li>
+						<li><a class="button ghost" href="customer-support-usecase.html">Customer Support</a></li>
+						<li><a class="button ghost" href="marketing-usecase.html">Marketing</a></li>
+						<li><a class="button ghost" href="sales-engineering-usecase.html">Sales Engineering</a></li>
+					</ul>
+				</li>
+				<li><a class="button ghost" href="team.html">Team</a></li>
+				<li><a class="button ghost" href="contact-us.html">Contact Us</a></li>
+				<li><a class="button ghost" href="customer-love.html">Customer Love</a></li>
+				<li><a class="button cta" href="https://chrome.google.com/webstore/detail/heroapp/nljldpdlijecbfkakgblhobklpiogmfg" target="_blank">Add to Chrome</a></li>
+			</ul>
+			<div class="mobile-nav"><button onclick="myFunction()" class="navbtn"></button>
+				<div id="mobilenav" class="mobile-nav-wrapper">
+					<a class="nav-item" href="features.html">Features</a>
+					<h4>Use Cases:</h4>
+						<a class="margin-left-40 sub-nav-item" href="account-executives-usecase.html">Account Executives</a>
+						<a class="margin-left-40 sub-nav-item" href="bdrs-sdrs-usecase.html">BDRs / SDRs</a>
+						<a class="margin-left-40 sub-nav-item" href="customer-success-usecase.html">Customer Success</a>
+						<a class="margin-left-40 sub-nav-item" href="customer-support-usecase.html">Customer Support</a>
+						<a class="margin-left-40 sub-nav-item" href="marketing-usecase.html">Marketing</a>
+						<a class="margin-left-40 sub-nav-item" href="sales-engineering-usecase.html">Sales Engineering</a>
+					<a class="nav-item" href="team.html">Team</a>
+					<a class="nav-item" href="contact-us.html">Contact Us</a>
+					<a class="nav-item" href="customer-love.html">Customer Love</a>
+				</div>
+			</div>
+		</nav>
+
+		<div class="narrow-section about">
+
+			<div class="story">
+				<h1>Our Story</h1>
+				<p>At Hero, we're building a new type of CRM interaction layer that puts the user first. We're taking the best learnings from modern consumer software and applying them to create a versatile and stunning experience on top of Salesforce. With Hero, Salesforce handles the complex database, and we focus 100% of our efforts on making the user experience delightful.</p>
+			</div>
+
+			<div class="mandates">
+				<h2>Our Mandate</h2>
+				<div class="mandate">
+					<h3>If we have access to the data, we'll help you use automation to make updates automatically.</h3>
+				</div>
+				<div class="mandate">
+					<h3>If we don't have the data, we'll enable you to enter it faster than ever before. Collaboration should be easy.</h3>
+				</div>
+				<div class="mandate">
+					<h3>The data you enter should be valuable to you, not just your manager.</h3>
+				</div>
+			</div>
+
+			<h1>Why we started <span class="highlight">Hero.app</span></h1><br>
+			<p>We believe that current CRM solutions are inadequate. Modern businesses are complex and full-stack solutions (platforms that offer many services) reflect the complexity of the many use cases that they need to cover as a one-size-fits-all solution.<br><br>
+
+			While in the past, an entire business might cover a narrow use case (e.g. customer support for mid-market enterprises), many CRMs today offer the whole gamut, addressing needs from pre-sales, post-sales, support, marketing, etc. Furthermore, these companies are focused on selling large deals into small groups of decision makers who rarely interact with the products they purchase. It's no wonder why many users feel they've been ignored by the people building the products they spend huge portions of their lives in.<br><br>
+
+			In the meantime, most people have experience with iPhones, Gmail, and other great products. This only increases the frustration with legacy CRM tools.<br><br>
+
+			Hero aims to solve this problem by focusing solely on the end user and leveraging learnings from the best modern consumer software.
+			</p>
+
+			<div class="team">
+				<h1>Meet the team</h1><br>
+				<div>
+					<div class="contact-card margin-right">
+						<h2>Daniel Chen</h2>
+						<span class="subtitle">Co-Founder</span><br>
+						<ul>
+							<li><a href="https://twitter.com/dychen3" target="_blank"><img src="assets/logos/twitter.svg"></a></li>
+							<li><a href="https://www.linkedin.com/in/danielyoungchen/" target="_blank"><img src="assets/logos/linkedin.svg"></a></li>
+						</ul>
+					</div>
+					<div class="contact-card">
+						<h2>Morgan Bender</h2>
+						<span class="subtitle">Co-Founder</span>
+						<ul>
+							<li><a href="https://twitter.com/_MBender" target="_blank"><img src="assets/logos/twitter.svg"></a></li>
+							<li><a href="https://www.linkedin.com/in/morganbender/" target="_blank"><img src="assets/logos/linkedin.svg"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4080ff" fill-opacity="1" d="M0,288L34.3,288C68.6,288,137,288,206,266.7C274.3,245,343,203,411,181.3C480,160,549,160,617,186.7C685.7,213,754,267,823,282.7C891.4,299,960,277,1029,234.7C1097.1,192,1166,128,1234,117.3C1302.9,107,1371,149,1406,170.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+		<div class="cta-banner">
+			<div class="section">
+				<h1>Experience the power <br>
+				of Hero.app today</h1><br>
+				<h3>Take it for a spin, it’s free and you’ll be up and running in seconds.</h3><br>
+				<a class="button cta-white" href="https://chrome.google.com/webstore/detail/heroapp/nljldpdlijecbfkakgblhobklpiogmfg" target="_blank">Add to Chrome</a>
+				<a class="button primary-white" href="https://web.hero.app">Launch in Browser</a>
+			</div>
+		</div>
+		<div class="footer section">
+			<div class="inline-flex">
+				<ul>
+					<li><a href="privacy.html">Privacy</a></li>
+					<li><a href="terms.html">Terms</a></li>
+					<li><a class="careers" href="careers.html">Careers</a></li>
+				</ul>
+				<div class="copyright">Copyright 2021 © Hero.app. All Rights Reserved.</div>
+				<ul>
+					<li><a href="https://twitter.com/herodotapp" target="_blank"><img src="assets/logos/twitter.svg"></a></li>
+					<li><a href="https://www.facebook.com/herodotapp/" target="_blank"><img src="assets/logos/facebook.svg"></a></li>
+					<li><a href="https://www.linkedin.com/company/herodotapp/" target="_blank"><img src="assets/logos/linkedin.svg"></a></li>
+					<li><a href="" target="_blank"><img src="assets/logos/instagram.svg"></a></li>
+				</ul>
+			</div>
+		</div>
+
+	</body>
+</html>
